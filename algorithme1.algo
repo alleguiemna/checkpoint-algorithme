@@ -1,0 +1,24 @@
+ALGORITHM Nb_caracter_Nb_words_Nb_vowels
+VAR
+    Nb_C:INTEGER:=0;
+    Nb_W:INTEGER:=1;
+    Nb-V:INTEGER:=0;
+    i:INTEGER:=0;
+    Sentence:STRING;
+    vowel:["a","A","e","E","y","Y","i","I","o","O","u","U"];
+BEGIN
+    for sentence[i] from 0 to "." do
+    i:=i+1;
+    IF (sentence[i] <> " ") THEN
+    Nb_C:=Nb_C+1;
+    END_IF
+    IF (sentence[i] = " ") THEN
+    Nb_W:=Nb_W+1;  
+    END_IF
+    IF (sentence[i] in vowel) THEN
+    Nb_V:=Nb_V+1;
+    END_IF
+    write("Number of characters are":Nb_C);
+    write("Number of words are":Nb_C);
+    write("Number of vowels are":Nb_C);
+END
